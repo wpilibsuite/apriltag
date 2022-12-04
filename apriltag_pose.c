@@ -513,6 +513,7 @@ void estimate_tag_pose_orthogonal_iteration(
         solution2->t = matd_create(3, 1);
         *err2 = orthogonal_iteration(v, p, &solution2->t, &solution2->R, 4, nIters);
     } else {
+        solution2->t = NULL;
         *err2 = HUGE_VAL;
     }
 
