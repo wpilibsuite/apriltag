@@ -121,7 +121,6 @@ double orthogonal_iteration(matd_t** v, matd_t** p, matd_t** t, matd_t** R, int 
             error += matd_to_double(matd_op("M'M", err_vec, err_vec));
             matd_destroy(err_vec);
         }
-        prev_error = error;
 
         free(q);
 
@@ -130,6 +129,8 @@ double orthogonal_iteration(matd_t** v, matd_t** p, matd_t** t, matd_t** R, int 
           prev_error = error;
           break;
         }
+
+        prev_error = error;
     }
 
     matd_destroy(I3);
