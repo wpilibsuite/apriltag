@@ -2323,7 +2323,7 @@ static uint64_t codedata[2320] = {
    0x0000000447b9e7acUL,
    0x0000000d9f564f30UL,
 };
-apriltag_family_t *tag36h10_create()
+apriltag_family_t *tag36h10_create(void)
 {
    apriltag_family_t *tf = calloc(1, sizeof(apriltag_family_t));
    tf->name = strdup("tag36h10");

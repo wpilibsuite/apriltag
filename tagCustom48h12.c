@@ -42241,7 +42241,7 @@ static uint64_t codedata[42211] = {
    0x0000bb8c4e2f373cUL,
    0x000018bccac8b0f5UL,
 };
-apriltag_family_t *tagCustom48h12_create()
+apriltag_family_t *tagCustom48h12_create(void)
 {
    apriltag_family_t *tf = calloc(1, sizeof(apriltag_family_t));
    tf->name = strdup("tagCustom48h12");

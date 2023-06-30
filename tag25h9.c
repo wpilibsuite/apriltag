@@ -65,7 +65,7 @@ static uint64_t codedata[35] = {
    0x0000000001bcc0f6UL,
    0x0000000000a64f8dUL,
 };
-apriltag_family_t *tag25h9_create()
+apriltag_family_t *tag25h9_create(void)
 {
    apriltag_family_t *tf = calloc(1, sizeof(apriltag_family_t));
    tf->name = strdup("tag25h9");
