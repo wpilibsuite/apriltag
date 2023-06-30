@@ -65565,7 +65565,7 @@ static uint64_t codedata[65535] = {
    0x0001719f5eec237fUL,
    0x0001e520c2997b43UL,
 };
-apriltag_family_t *tagCircle49h12_create()
+apriltag_family_t *tagCircle49h12_create(void)
 {
    apriltag_family_t *tf = calloc(1, sizeof(apriltag_family_t));
    tf->name = strdup("tagCircle49h12");

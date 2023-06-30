@@ -48744,7 +48744,7 @@ static uint64_t codedata[48714] = {
    0x000c0d162da0e26dUL,
    0x000cdc7a163acc66UL,
 };
-apriltag_family_t *tagStandard52h13_create()
+apriltag_family_t *tagStandard52h13_create(void)
 {
    apriltag_family_t *tf = calloc(1, sizeof(apriltag_family_t));
    tf->name = strdup("tagStandard52h13");

@@ -2145,7 +2145,7 @@ static uint64_t codedata[2115] = {
    0x0000015cff6a6f12UL,
    0x000001ee40155a64UL,
 };
-apriltag_family_t *tagStandard41h12_create()
+apriltag_family_t *tagStandard41h12_create(void)
 {
    apriltag_family_t *tf = calloc(1, sizeof(apriltag_family_t));
    tf->name = strdup("tagStandard41h12");
