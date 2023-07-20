@@ -76,8 +76,9 @@ getopt_t *getopt_create()
     return gopt;
 }
 
-void getopt_option_destroy(getopt_option_t *goo)
+void getopt_option_destroy(void *vgoo)
 {
+    getopt_option_t* goo = (getopt_option_t*)vgoo;
     free(goo->sname);
     free(goo->lname);
     free(goo->svalue);
