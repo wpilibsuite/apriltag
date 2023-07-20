@@ -594,7 +594,7 @@ static int pjpeg_decode_buffer(struct pjpeg_decode_state *pjd)
 
                                         // if high bit is clear, it's negative
                                         if ((value & (1 << (ssss-1))) == 0)
-                                            value += ((-1) << ssss) + 1;
+                                            value += (int32_t)(UINT32_MAX << ssss) + 1;
 
                                         dcpred[nsidx] += value;
                                         block[0] = dcpred[nsidx] * pjd->qtab[qtabidx][0];
@@ -620,7 +620,7 @@ static int pjpeg_decode_buffer(struct pjpeg_decode_state *pjd)
 
                                             // if high bit is clear, it's negative
                                             if ((value & (1 << (ssss-1))) == 0)
-                                                value += ((-1) << ssss) + 1;
+                                                value += (int32_t)(UINT32_MAX << ssss) + 1;
 
                                             coeff += rrrr;
 
