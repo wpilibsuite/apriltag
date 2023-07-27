@@ -36,7 +36,7 @@ extern "C" {
 
 typedef struct getopt getopt_t;
 
-getopt_t *getopt_create();
+getopt_t *getopt_create(void);
 void getopt_destroy(getopt_t *gopt);
 
 // Parse args. Returns 1 on success
