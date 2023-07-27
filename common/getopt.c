@@ -64,7 +64,7 @@ struct getopt
     zarray_t   *options;
 };
 
-getopt_t *getopt_create()
+getopt_t *getopt_create(void)
 {
     getopt_t *gopt = (getopt_t*) calloc(1, sizeof(getopt_t));
 
